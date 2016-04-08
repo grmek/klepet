@@ -165,7 +165,7 @@ function dodajSlike(vhodnoBesedilo) {
 }
 
 function dodajYoutube(vhodnoBesedilo) {
-  var url = vhodnoBesedilo.match(/https:\/\/www\.youtube\.com\/watch\?v=[^\s"]*/ig);
+  var url = vhodnoBesedilo.match(/https:\/\/www\.youtube\.com\/watch\?v=[^\s"<]*/ig);
   if (vhodnoBesedilo.indexOf("/zasebno ") == 0) {
     var besede = vhodnoBesedilo.split('\"');
     for (var i in url) {
